@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-blue: #3CF;
+    --color-jaune: #FC3;
+    --background-head: rgba(250, 250, 250, 0.1);
+    --color-white: #fff;
+    --background-blue: #162239fc;
+    --border-bottom: #121b2f;
+    --color-jaune-dark: #f5a425;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3CF;
+}
+
+
+/********************header*****************************/
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/****nav***/
+
+nav {
+    position: fixed;
+    z-index: 10;
+}
+
+.nav-color {
+    background-color: var(--background-blue);
+    opacity: .95;
+}
+
+.navbar-position {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.logo {
+    font-size: 2.3em;
+    font-weight: 900;
+}
+
+.logo span {
+    color: #f5a425;
+}
+
+.list-style {
+    margin-left: 1rem;
+    border: transparent 3px solid;
+    color: #fff;
+}
+
+.list-style a:hover {
+    color: #f5a425;
+}
+
+
+/*color nav**/
+
+a#navbarDropdownMenuLink,
+a#navbarDropdownMenuLink:hover,
+a.nav-link:hover {
+    color: #fff !important;
+}
+
+.dropdown-style {
+    border-bottom: 1px solid var(--border-bottom);
+    padding: .8rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.dropdown-menu {
+    margin-top: 2px;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+}
+
+.dropdown-style:hover {
+    color: #f5a425;
+}
+
+
+/******************description*************/
+
+.description {
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 80vw;
+}
+
+.description p {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.description h1 {
+    font-size: 5em;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.description h1 span {
+    color: #f5a425;
+}
+
+.description button {
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: #f5a425;
+    padding: 10px 15px;
+    border-radius: 0;
+}
+
+
+/****vidéo****/
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #121b2f;
+    opacity: .8;
+    z-index: 1;
+}
+
+
+/********************END header*****************************/
+
+
+/******footer header*******/
+
+.features-post {
+    z-index: 30;
+    position: relative;
+    bottom: 0;
+}
+
+.features-content {
+    background-color: rgb(16, 16, 41);
+    color: #fff;
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+    padding-bottom: 3rem;
+}
+
+.content-show h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.content-show h4 i {
+    margin-right: 8px;
+}
+
+.content p {
+    margin-bottom: .5rem;
+}
+
+.content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 4px solid #fff;
+    font-weight: 700;
+}
+
+
+/************large devices only ********/
+
+@media (min-width: 1200px) {
+    /***********header************/
+    /***navbar***/
+    .navbar-position {
+        justify-content: end;
+    }
+    .list-style:hover {
+        border: #f5a425 3px solid;
+    }
+    .list-style a:hover {
+        color: #fff;
+    }
+    .dropdown-menu a:hover {
+        color: #f5a425;
+    }
+}
+
+
+/********** Medium devices only *********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .list-style:hover {
+        border: #f5a425 3px solid;
+    }
+    .list-style a:hover {
+        color: #fff !important;
+    }
+}
+
+
+/********Small divices only *************/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /***features****/
+    .features {
+        background-color: #121b2f;
+    }
+    .features-post {
+        position: initial;
+    }
+    .features-content {
+        position: initial;
+        text-align: justify;
+    }
+}
+
+
+/****** Extra small devices only ********/
+
+@media (max-width: 767px) {}
