@@ -22,13 +22,13 @@ if (window.screen.width >= 992) {
 
 // features
 
-var featuresHover = document.querySelectorAll('.features-content');
-var featureShow = document.querySelectorAll('.content');
-featuresHover.forEach(function(element, index) {
-    element.addEventListener('mouseover', function() {
-        featureShow[index].classList.remove('hide');
-        element.style.backgroundColor = "#f5a425";
-    });
+
+// $(document).ready(function() {
+$(".features-post").hover(function() {
+    $(".features-post .content").css("height", "180px");
+}, function() {
+    $(".features-post .content").css("height", "0px");
+});
     element.addEventListener('mouseleave', function() {
         featureShow[index].classList.add('hide');
         element.style.backgroundColor = "rgb(16, 16, 41)";
