@@ -22,15 +22,23 @@ if (window.screen.width >= 992) {
 
 // features
 
+// var features = document.querySelectorAll('.features-post');
+// var featuresContent = document.querySelectorAll('.features-post .content');
+// features.forEach(function(elm, index) {
+//     elm.hover(function() {
+//         featuresContent[index].css('height', "180px");
+//     }, function() {
+//         featuresContent[index].css('height', "0px");
+//     })
+// })
 
-// $(document).ready(function() {
-$(".features-post").hover(function() {
-    $(".features-post .content").css("height", "180px");
-}, function() {
-    $(".features-post .content").css("height", "0px");
-});
-    element.addEventListener('mouseleave', function() {
-        featureShow[index].classList.add('hide');
-        element.style.backgroundColor = "rgb(16, 16, 41)";
+var featuresHover = document.querySelectorAll('.features-post');
+var featureShow = document.querySelectorAll('.features-post .content');
+featuresHover.forEach(function(element, index) {
+    element.addEventListener('mouseover', function() {
+        featureShow[index].style.height = "150px";
     });
-})
+    element.addEventListener('mouseleave', function() {
+        featureShow[index].style.height = "0px";
+    });
+});
