@@ -22,23 +22,50 @@ if (window.screen.width >= 992) {
 
 // features
 
-// var features = document.querySelectorAll('.features-post');
-// var featuresContent = document.querySelectorAll('.features-post .content');
-// features.forEach(function(elm, index) {
-//     elm.hover(function() {
-//         featuresContent[index].css('height', "180px");
-//     }, function() {
-//         featuresContent[index].css('height', "0px");
-//     })
-// })
-
 var featuresHover = document.querySelectorAll('.features-post');
 var featureShow = document.querySelectorAll('.features-post .content');
 featuresHover.forEach(function(element, index) {
     element.addEventListener('mouseover', function() {
-        featureShow[index].style.height = "150px";
+        if (window.screen.width >= 1020) {
+            featureShow[index].style.height = "180px";
+        } else if (window.screen.width >= 1000) {
+            featureShow[index].style.height = "230px";
+        } else if (window.screen.width >= 770) {
+            featureShow[index].style.height = "140px";
+
+        } else if (window.screen.width >= 480) {
+            featureShow[index].style.height = "100px";
+        } else {
+            featureShow[index].style.height = "140px";
+        }
+
     });
     element.addEventListener('mouseleave', function() {
         featureShow[index].style.height = "0px";
+    });
+});
+
+//why us
+
+var linkToChoose = document.querySelectorAll('li.list-category');
+var contentWhyUs = document.querySelectorAll('.why');
+
+linkToChoose.forEach(function(element) {
+    element.addEventListener('click', function(e) {
+        contentWhyUs.forEach(function(elem) {
+            elem.classList.add('hide');
+        });
+        var linkClass = e.currentTarget.classList;
+        if (linkClass.contains("best")) {
+            document.querySelector('.why.best').classList.remove('hide');
+
+        } else if (linkClass.contains("quality")) {
+            document.querySelector('.why.quality').classList.remove('hide');
+
+        } else if (linkClass.contains('top')) {
+            document.querySelector('.why.top').classList.remove('hide');
+        }
+
+
     });
 });
