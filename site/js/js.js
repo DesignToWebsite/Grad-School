@@ -105,3 +105,9 @@ $('.owl-carousel').owlCarousel({
 
     }
 });
+
+
+///date footer
+
+const date = document.getElementById("date");
+date.innerHTML = new Date().getFullYear();

@@ -406,21 +406,21 @@ a.link:hover {
     width: 80%;
 }
 
- ::placeholder {
+::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #fff;
+    color: #fff !important;
     opacity: 1;
     /* Firefox */
 }
 
  :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: #fff;
+    color: #fff !important;
 }
 
  ::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: #fff;
+    color: #fff !important;
 }
 
 .register {
@@ -522,12 +522,150 @@ a.link:hover {
 
 .presentation {
     background: url("../images/video-bg.jpg") center center / cover;
-    height: 100vh;
+    height: auto;
     color: #fff;
+}
+
+.smal-text {
+    font-size: 1em;
+}
+
+.presentation h4 {
+    font-size: 2.3em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.presentation h4 span {
+    color: #f5a425;
+}
+
+.text {
+    font-size: .9em;
+}
+
+.url {
+    color: #fff;
+    font-weight: 600;
+    background-color: #f5a425;
+    width: fit-content;
+}
+
+.url:hover {
+    color: white;
+}
+
+.video-des {
+    height: 35rem;
+    width: auto;
+    background: url("../images/main-thumb.png") center center / cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.bgr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.bgr p {
+    color: black;
+    font-weight: 700;
+}
+
+.bgr .run {
+    background-color: #f5a425;
+    /* padding: 15px; */
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
 }
 
 
 /**************end presentation***********/
+
+
+/************contact************/
+
+.contact {
+    background: url("../images/contact-bg.jpg") center center / cover;
+    padding-bottom: 2rem;
+    color: #fff;
+}
+
+.form-control {
+    color: #fff !important;
+}
+
+.contact-content {
+    margin-top: 3rem;
+}
+
+.contact-content .form {
+    background-color: rgba(250, 250, 250, 0.1);
+    padding: 4rem 2rem 2rem 2rem;
+}
+
+.contact-content .form-control {
+    margin-bottom: 2rem;
+    background-color: rgba(250, 250, 250, 0.1);
+    border: none;
+    padding: 1rem;
+}
+
+input.form-control,
+textarea.form-control {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.contact-content .btn {
+    background-color: #f5a425;
+    color: #fff;
+    font-weight: 600;
+    width: fit-content;
+    margin: 20px auto;
+    border-radius: 0;
+    padding: 10px 15px;
+}
+
+.contact-content input {
+    color: #fff;
+    border: none;
+}
+
+.contact .ligne {
+    height: 3rem;
+}
+
+
+/************footer*************/
+
+footer {
+    background-color: #152036;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+    padding: 20px;
+    border-top: #fff 2px solid;
+}
+
+footer p {
+    margin-bottom: 0;
+}
 
 
 /************large devices only ********/
@@ -547,6 +685,22 @@ a.link:hover {
     .dropdown-menu a:hover {
         color: #f5a425;
     }
+    /**presentation ***/
+    .pre-content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
+    /*****contact*****/
+    .contact {
+        height: 100vh;
+    }
 }
 
 
@@ -558,6 +712,21 @@ a.link:hover {
     }
     .list-style a:hover {
         color: #fff !important;
+    }
+    /***presentation****/
+    .pre-content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
+    .contact {
+        height: 100vh;
     }
 }
 
@@ -588,6 +757,17 @@ a.link:hover {
     }
     .description button {
         font-size: 15px;
+    }
+    /****presentation****/
+    .presentation {
+        padding: 5rem;
+    }
+    .video-des {
+        margin-top: 5rem;
+    }
+    /******contact********/
+    .form {
+        margin-bottom: 2rem;
     }
 }
 
@@ -630,6 +810,17 @@ a.link:hover {
     }
     .category {
         font-size: 3vw;
+    }
+    /****presentation****/
+    .presentation {
+        padding: 5rem;
+    }
+    .video-des {
+        margin-top: 5rem;
+    }
+    /***contact*****/
+    .form {
+        margin-bottom: 2rem;
     }
 }
 
