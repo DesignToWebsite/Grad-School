@@ -458,47 +458,64 @@ a.link:hover {
 
 /******courses******/
 
-.course {
-    height: auto;
-    width: 100%;
-    background: url('../images/choosing-bg.jpg') center center / cover;
+.lesson {
+    background: url("../images/courses-bg.jpg") center center / cover;
+    padding-bottom: 20px;
 }
 
-.card {
-    border: none;
-    margin-right: 10px;
-    border-radius: 10px;
-    margin: 20px;
+.item {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.card-title {
-    font-weight: 600;
+.item img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.card-text {
-    font-size: 13px;
-    color: #212529;
+.info-course {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: black;
 }
 
-.card-body img {
+.info-course h4 {
+    font-size: 1.1em;
+    margin: 10px 0 15px 0;
+}
+
+.info-course p {
+    font-size: .8em;
+    margin-bottom: 20px;
+}
+
+.owl-carousel .owl-item .info-fo img {
+    width: auto;
     border: #f5a425 2px solid;
     border-radius: 50%;
 }
 
-.info-teacher {
+.info-fo {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.info-teacher a {
-    color: #f5a425;
+.info-fo a {
     text-decoration: none;
+    color: gray;
+    margin: auto 0;
 }
 
-.card-flex {
-    display: flex;
+.info-fo a.pay {
+    color: #f5a425;
 }
+
+
+/*******end courses**************/
 
 
 /********presentation****************/
