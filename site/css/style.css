@@ -601,8 +601,9 @@ a.link:hover {
 
 .contact {
     background: url("../images/contact-bg.jpg") center center / cover;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
     color: #fff;
+    height: auto;
 }
 
 .form-control {
@@ -686,6 +687,10 @@ footer p {
         color: #f5a425;
     }
     /**presentation ***/
+    .presentation {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
     .pre-content {
         height: 100vh;
         display: flex;
@@ -698,9 +703,6 @@ footer p {
         justify-self: center;
     }
     /*****contact*****/
-    .contact {
-        height: 100vh;
-    }
 }
 
 
@@ -760,11 +762,15 @@ footer p {
     }
     /****presentation****/
     .presentation {
-        padding: 5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
-    .video-des {
+    .presentation h4 {
+        font-size: 1.7em;
+    }
+    /* .video-des {
         margin-top: 5rem;
-    }
+    } */
     /******contact********/
     .form {
         margin-bottom: 2rem;
@@ -813,7 +819,15 @@ footer p {
     }
     /****presentation****/
     .presentation {
-        padding: 5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .pre-content {
+        text-align: center;
+    }
+    .presentation h4 {
+        font-size: 1.7em;
+        text-align: center;
     }
     .video-des {
         margin-top: 5rem;

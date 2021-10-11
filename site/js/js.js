@@ -111,3 +111,28 @@ $('.owl-carousel').owlCarousel({
 
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
+
+
+
+//timer
+
+const startDays = 81;
+const startHours = 14;
+const startMinutes = 60;
+const startSecond = 00;
+
+//days
+var days = document.querySelector(".days .number");
+days.innerHTML = startDays;
+
+//hours
+var hours = document.querySelector(".hours .number");
+hours.innerHTML = startHours;
+
+//minutes
+var minutes = document.querySelector(".minutes .number");
+minutes.innerHTML = startMinutes;
+
+//second
+var seconds = document.querySelector(".seconds .number");
+seconds.innerHTML = startSecond;
