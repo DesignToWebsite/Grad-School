@@ -10,109 +10,63 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./font/css/all.css">
-    <style>
-        .features-post {
-            z-index: 30;
-            position: relative;
-            bottom: 0;
-        }
-        
-        .features-content {
-            background-color: rgb(16, 16, 41);
-            color: #fff;
-            padding: 2rem;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-        }
-        
-        .hide {
-            display: none;
-            padding-bottom: 3rem;
-            transition: 3s;
-        }
-        
-        .content-show h4 {
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 20px;
-        }
-        
-        .content-show h4 i {
-            margin-right: 8px;
-        }
-        
-        .content p {
-            margin-bottom: .5rem;
-        }
-        
-        .content a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: #fff;
-            border-bottom: 4px solid #fff;
-            font-weight: 700;
-        }
-    </style>
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header></header>
-    <section class="features">
+
+    <section class="timer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                    <div class="features-post">
-                        <div class="features-content">
-                            <div class="content-show">
-                                <h4>
-                                    <i class="fas fa-pencil-alt"></i> all courses
-                                </h4>
-                            </div>
-                            <div class="content hide">
-                                <p>
-                                    Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.
-                                </p>
-                                <a href="#">more info.</a>
+                <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                    <div class="content">
+                        <p class="big-text">
+                            Take <a href="#" class="linko"> any online course </a> and win $326 for your next class
+                        </p>
+                        <div class="count">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="days time">
+                                        <span class="number">92</span>
+                                        <span class="category text-uppercase">days</span>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="hours time">
+                                        <span class="number">92</span>
+                                        <span class="category text-uppercase">hours</span>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="minutes time">
+                                        <span class="number">92</span>
+                                        <span class="category text-uppercase">minutes</span>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="seconds time">
+                                        <span class="number">92</span>
+                                        <span class="category text-uppercase">seconds</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                    <div class="features-post">
-                        <div class="features-content">
-                            <div class="content-show">
-                                <h4>
-                                    <i class="fas fa-graduation-cap"></i> virtual class
-                                </h4>
-                            </div>
-                            <div class="content hide">
-                                <p>
-                                    Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.
-
-
-                                </p> <a href="#">more info.</a>
-                            </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                    <div class="register">
+                        <div class="register-text">
+                            <p>
+                                Register your free account and get immediate access to online courses
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                    <div class="features-post">
-                        <div class="features-content">
-                            <div class="content-show">
-                                <h4>
-                                    <i class="fa fa-book"></i> real meeting
-                                </h4>
-                            </div>
-                            <div class="content hide">
-                                <p>
-                                    Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.
-
-
-                                </p> <a href="#">more info.</a>
-                            </div>
+                        <div class="register-form">
+                            <input type="text" name="name" placeholder="Your Name" id="mane" required>
+                            <input type="email" name="email" placeholder="Your Email" id="email" required>
+                            <input type="tel" name="tel" placeholder="Your Phone Number" id="number" required>
+                            <button type="submit" class="btn text-uppercase">
+                                GET IT NOW
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -122,9 +76,10 @@
 
 
 
-
-
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="./js/js.js"></script>
 </body>
 
 </html>

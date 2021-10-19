@@ -254,7 +254,7 @@ header .overlay {
     color: #fff;
     height: auto;
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
     background: url('../images/choosing-bg.jpg') center center / cover;
     padding-bottom: 5rem;
 }
@@ -308,7 +308,6 @@ header .overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: justify;
 }
 
 .whyUS .content h4 {
@@ -512,6 +511,15 @@ a.link:hover {
 
 .info-fo a.pay {
     color: #f5a425;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: white;
+    border-radius: 0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: #f5a425 !important;
 }
 
 
@@ -736,6 +744,19 @@ footer p {
 /********Small divices only *************/
 
 @media (min-width: 768px) and (max-width: 991px) {
+    /******why choose us*********/
+    .categorie ul li {
+        font-size: 15px;
+        font-weight: 600;
+        justify-content: space-between;
+    }
+    .whyUs .why {
+        text-align: center;
+    }
+    .whuUs .icon {
+        padding: 4px;
+        font-size: 10px;
+    }
     /***features****/
     .features {
         background-color: rgb(16, 16, 41);
@@ -781,6 +802,19 @@ footer p {
 /****** Extra small devices only ********/
 
 @media (max-width: 767px) {
+    /******why choose us*********/
+    .categorie ul li {
+        font-size: 15px;
+        font-weight: 600;
+        justify-content: space-between;
+    }
+    .whyUs .why {
+        text-align: center;
+    }
+    .whuUs .icon {
+        padding: 4px;
+        font-size: 10px;
+    }
     /***features****/
     .features {
         background-color: rgb(16, 16, 41);
