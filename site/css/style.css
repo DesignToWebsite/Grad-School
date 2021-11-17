@@ -881,4 +881,17 @@ footer p {
         height: 1.2em;
         width: 1.2em;
     }
+    /******why choose us*********/
+    .categorie ul {
+        padding: 0;
+    }
+    .categorie ul li {
+        font-size: 13px;
+        font-weight: normal;
+        justify-content: space-between;
+    }
+    .whuUs .icon {
+        padding: 3px;
+        font-size: 8px;
+    }
 }
