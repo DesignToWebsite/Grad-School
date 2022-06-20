@@ -17,7 +17,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #3CF;
+    background-color: var(--background-blue);
 }
 
 .hide {
@@ -174,9 +174,6 @@ header video {
     width: auto;
     height: auto;
     z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
 
@@ -272,6 +269,8 @@ header .overlay {
     margin: auto;
     text-align: center;
     border: rgba(250, 250, 250, 0.1) 2px solid;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 1rem;
     font-weight: 600;
@@ -405,6 +404,34 @@ a.link:hover {
     width: 80%;
 }
 
+::-webkit-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+::-moz-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff !important;
+    opacity: 1;
+    /* Firefox */
+}
+
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff !important;
@@ -443,6 +470,8 @@ a.link:hover {
     background-color: #f5a425;
     color: #fff;
     font-weight: 600;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 20px auto;
     border-radius: 0;
@@ -557,6 +586,8 @@ a.link:hover {
     color: #fff;
     font-weight: 600;
     background-color: #f5a425;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -644,6 +675,8 @@ textarea.form-control {
     background-color: #f5a425;
     color: #fff;
     font-weight: 600;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 20px auto;
     border-radius: 0;
